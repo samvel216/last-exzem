@@ -31,8 +31,7 @@ inputEl.addEventListener('input', (event) => {
          if (data.length === 1) {
              console.log(inputEl.value.length)
             renderCountriesInfo(data[0])
-         }  
-       
+         }        
       })
       .catch(error => {
           if (inputEl.value.length > 6 && error) {
@@ -42,7 +41,6 @@ inputEl.addEventListener('input', (event) => {
           }      
       });
 })
-
 const renderCountriesInfo = (countryName) => {
     countryListEl.innerHTML = "";
     console.log(countryName)
@@ -55,8 +53,7 @@ const renderCountriesInfo = (countryName) => {
    <div class="flex-container">
    <img src="${countryName.flags.png}" alt="" class="imges"> <h2 class="title">${countryName.name.official}</h2>
    </div>
-    <ul class="list">
-    
+    <ul class="list">   
       <li class="item">
         <p class="text"><span class="span">Capital:${" "}</span>${countryName.capital}</p>
         </li>
