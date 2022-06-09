@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -11,44 +10,69 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
-#search-box {
-  font: inherit;
-  padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
-}
-.list {
-  list-style: none;
-  padding: 0;
-}
-.span {
-  font-weight: 700;
-  font-size: 25px;
-}
-.text {
-  font-size: 25px;
-  font-weight: 400;
-}
-.title {
-  font-size: 40px;
-  font-weight: 700;
-  margin-left: 20px;
-}
-.less-title {
-  font-size: 25px;
-  font-weight: 500;
-  margin-left: 20px;
-}
-.imges {
-  width: 50px;
-  height: 50px;
-}
-.less-img {
-  width: 40px;
-  height: 40px;
-}
-.flex-container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 280px) and (max-width: 500px) {
+  .header {
+    padding: 5px 0;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .icon-menu {
+   width: 24px;
+   height: 24px;
+   fill: #808080;
+  }
+  .header-button {
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    background-color: #fafafa;
+  }
+  .header-logo-link {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #212121;
+  }
+  .header-logo-span {
+    color: #2196f3;
+    font-style: italic;
+  }
+  .icon-basket {
+    width: 30px;
+    height: 30px;
+    fill: #808080;
+  }
+  .header-basket-link {
+    padding: 10px;
+    text-decoration: none;
+  }
+  .header-basket-span {
+    font-size: 13px;
+    color: #fafafa;
+    background-color: #212121;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
 }

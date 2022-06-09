@@ -5,14 +5,292 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 10</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./_main.scss">
   </head>
   <body>
-    <input type="text" id="search-box" />
-    <ul class="country-list"></ul>
-    <div class="country-info">
+  <header class="header">
+    <div class="container">
+      <div class="header-container">
+          <button class="header-button">
+            <svg class="icon-menu">
+              <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>    
+        <a href="./dsdsdsds.html" class="header-logo-link">
+         Zefir<span class="header-logo-span">Chik</span>
+        </a>
+        <a href="" class="header-basket-link">
+          <span class="header-basket-span">0</span>
+          <svg class="icon-basket">
+            <use href="./images/sprite.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="desktop-header-container">
+        <div class="desktop-nav-contacts-container">
+     <nav class="desktop-header-nav">
+  <ul class="desktop-header-list">
+<li class="item">
+ <a href="" class="link">Каталог</a>
+</li>
+<li class="item">
+  <a href="" class="link">О нас</a>
+ </li>
+ <li class="item">
+  <a href="" class="link">Контакты</a>
+   </li>
+   
+  </ul>
+  <a href="" class="desktop-link-dots">
+   <svg class="desktop-icon-dots">
+     <use href="./images/sprite.svg#icon-dots-three-horizontal"></use>
+   </svg>
+  </a>
+  <div class="desktop-nav-container">
+    <ul class="desktop-nav-dropdown-list">
+     <li class="item">
+      <a href="" class="link">Доставка</a>
+       </li>
+       <li class="item">
+        <a href="" class="link">Оплата</a>
+         </li>
+         <li class="item">
+          <a href="" class="link">Наши соцсети</a>
+           </li>
+    </ul>
+  </div>
+     </nav> 
+     <div class="desktop-contacts-container">
+        <ul class="desktop-contacts-list">
+    <li class="item">
+      <p class="text">Доставка с 8:00 до 23:00</p>
+    </li>
+    <li class="item ">
+   <a href="tel:+38008008080" class="link tel">+3(800) 800-80-80</a>
+    </li>
+        </ul>
+     </div>
     </div>
-    <script src="index.js" type="module"></script>
+<div class="desktop-search-container">
+  <a href="./dsdsdsds.html" class="header-logo-link">
+    Zefir<span class="header-logo-span">Chik</span>
+   </a>
+   <form action="" class="desktop-search-form">
+     <label for="" class="desktop-search-label">
+       <input type="text" placeholder="Поиск" class="desktop-search-input">
+       <button class="desktop-search-form-button">
+         <svg class="desktop-search-icon">
+           <use href="./images/sprite.svg#icon-search"></use>
+         </svg>
+       </button>
+     </label>
+   </form>
+   <div class="desktop-header-basket-container">
+    <a href="" class="desktop-header-basket-link">
+      <span class="desktop-header-basket-span">0</span>
+      <svg class="desktop-icon-basket">
+        <use href="./images/sprite.svg#icon-cart"></use>
+      </svg>
+    </a>
+   </div>  
+</div>
+      </div>
+      <div class="desktop-header-category-container">
+        <ul class="desktop-header-category-list">
+          <li class="item">
+            <a href="" class="link">Категория один</a>
+          </li>
+          <li class="item">
+           <a href="" class="link">Категория два</a>
+         </li>
+         <li class="item">
+           <a href="" class="link">Категория три</a>
+         </li>
+         <li class="item">
+           <a href="" class="link">Категория четыре</a>
+         </li>
+         <li class="item">
+           <a href="" class="link">Категория пять</a>
+         </li>
+        </ul>
+        </div>
+    </div>
+  </header>
+ <section class="hero">
+   <div class="container">
+ <img src="./images/334_309eceddee0a5ef6959b8b34ef14c7df.jpg" alt="" class="hero-img">
+ <div class="hero-button-container">
+  <button class="hero-button choise"></button>
+  <button class="hero-button"></button>
+ </div>
+</div>
+ </section>
+<section class="popular-section">
+ <div class="container">
+   <div class="popular-title-button-container">
+    <h2 class="popular-main-title">Популярные товары</h2>
+    <div>
+      <div class="arrow-6">
+        <svg width="14px" height="13px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow-margin-icon">
+            <g transform="translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)">
+                <polygon class="arrow-6-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                <polygon class="arrow-6-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                <path d="M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+            </g>
+        </svg>
+        <svg width="14px" height="13px" viewBox="-1 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g>
+                <polygon class="arrow-6-pl" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                <polygon class="arrow-6-pl-fixed" points="16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"></polygon>
+                <path d="M-4.58892184e-16,0.56157424 L-4.58892184e-16,16.1929159 L9.708,8.33860465 L-1.64313008e-15,0.56157424 L-4.58892184e-16,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"></path>
+            </g>
+        </svg>
+    </div>
+    </div>
+   </div> 
+   <ul class="popular-list">
+     <li class="item">
+       <div class="card-container">
+         
+       <a href="" class="link">
+        <div class="popular-img-container">
+         <img src="./images/79050349-9d6e-4c3b-ae4e-da35a3215d1f.jpg" alt="">
+        </div>
+       </a>
+       <div class="text-container">
+      <p class="text">Платье Спорт</p>
+      <span class="price">200 ₴</span>
+      <button class="button">В корзину</button>
+       </div>
+      </div>
+     </li>
+     <li class="item">
+      <div class="card-container">
+      <a href="" class="link">
+        <div class="popular-img-container">
+        <img src="./images/79050349-9d6e-4c3b-ae4e-da35a3215d1f.jpg" alt="">
+      </div>
+      </a>
+      <div class="text-container">
+     <p class="text">Платье Спорт. </p>
+     <span class="price">200 ₴</span>
+     <button class="button">В корзину</button>
+      </div>
+     </div>
+    </li>
+    <li class="item">
+      <div class="card-container">
+      <a href="" class="link">
+        <div class="popular-img-container">
+        <img src="./images/79050349-9d6e-4c3b-ae4e-da35a3215d1f.jpg" alt="">
+      </div>
+      </a>
+      <div class="text-container">
+     <p class="text">Платье Спорт. </p>
+     <span class="price">200 ₴</span>
+     <button class="button">В корзину</button>
+      </div>
+     </div>
+    </li>
+      
+   </ul>
+   <ul class="scroll-list">
+     <li class="item">
+       <button class="scroll-btn"></button>
+     </li>
+     <li class="item">
+      <button class="scroll-btn"></button>
+    </li>
+    <li class="item">
+      <button class="scroll-btn"></button>
+    </li>
+    <li class="item">
+      <button class="scroll-btn"></button>
+    </li>
+    <li class="item">
+      <button class="scroll-btn"></button>
+    </li>
+   </ul>
+   <div>
+     <img src="./images/photo-3_8015189c452aa3752b07e58dd8a03958.jpg" alt="">
+   </div>
+ </div>
+</section>
+<section class="deliver-payment">
+<div class="container">
+<h2 class="visually-hidden">Условия доставки и оплаты</h2>
+<div class="deliver-payment-container">
+ <div class="deliver-container">
+   <div class="deliver-img-container">
+  <img src="./images/packages-ge260f19a8_1280.jpg" alt="" class="img">
+</div>
+  <div class="deliver-title-text-container">
+  <h3 class="deliver-payment-title">Условия доставки</h3>
+  <p class="deliver-payment-text">Здесь вы можете написать коротко о своих условиях доставки, более детально и подробнее будет после перехода на страницу “Доставка”.</p>
+</div>
+ </div>
+ <div class="payment-container">
+  <div class="deliver-img-container">
+  <img src="./images/money-g5978b2ead_1280.jpg" alt="" class="img">
+</div>
+  <div class="deliver-title-text-container">
+  <h3 class="deliver-payment-title">Способ оплаты</h3>
+  <p class="deliver-payment-text">Ну и не забываем написать как можно оплатить товар который есть на вашем сайте, здесь опишите коротко что и как вы принимаете. 
+    Детально и полный список уже можно написать на странице “Способы оплаты”</p>
+  </div>
+ </div>
+</div>
+</div>
+</section>
+<section class="social">
+  <div class="container">
+    <div class="social-link-container">
+      <a href="" class="social-link social-link-margin">Telegram
+        <svg class="telegram-icon">
+          <use href="./images/sprite.svg#icon-telegram"></use>
+        </svg>
+      </a>
+    
+    </div>
+  <ul class="social-list">
+    <li class="item">
+      <img src="./images/493426cd-bb74-447d-8d51-74a9841dbd79.jpg" alt="" class="img">
+    </li>
+    <li class="item">
+      <img src="./images/19b93058-f19c-499f-bacc-b119e10d6360.jpg" alt="" class="img">
+    </li>
+    <li class="item">
+      <img src="./images/a50b4589-4e5c-4e1f-8fa2-d8bb1205581a.jpg" alt="" class="img">
+    </li>
+    <li class="item">
+      <img src="./images/99d25cc3-fe48-472c-be8a-cb222a54b6ea.jpg" alt="" class="img">
+    </li>
+  </ul>
+  <a href="" class="social-link">
+    <svg class="instagram-icon">
+      <use href="./images/sprite.svg#icon-instagram"></use>
+    </svg>
+    Instagram
+  </a> 
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <a href="" class="header-logo-link">
+      Zefir<span class="header-logo-span">Chik</span>
+     </a>
+     <ul class="footer-list">
+       <li class="item">
+         <a href="tel:+38008008080" class="link">+3(800) 800-80-80</a>
+         <p class="text">справочная служба</p>
+       </li>
+       <li class="item">
+        <a href="tel:+38008008080" class="link">+3(800) 800-80-80</a>
+        <p class="text">интернет магазин</p>
+      </li>
+     </ul>
+  </div>
+</footer>
   </body>
 </html>
 

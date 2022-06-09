@@ -1,0 +1,28 @@
+.hero-button {
+    background-color: var(--icon-fill);
+    outline: none;
+    border: none;
+    height: 4px;
+    width: 48%;
+    margin-top: 10px;
+}
+.hero-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+.choise {
+    background-color: black;
+}
+@media screen and (min-width: 760px) {
+    .hero {
+        padding: 15px 0px;
+        position: relative;
+    }
+    .hero-button-container {
+     position: absolute;
+     bottom: 8%;
+     left: 4%;
+     width: 25%;
+    }
+}
+

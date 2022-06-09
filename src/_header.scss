@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #212121;
+    line-height: 1.5;
+  }
+
+    .header {
+      padding: 5px 0;
+    }
+    .container {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0px auto;
+      padding: 0px 15px;
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    .icon-menu {
+     width: 24px;
+     height: 24px;
+     fill: #808080;
+    }
+    .header-button {
+      padding: 10px 10px;
+      outline: none;
+      border: none;
+      background-color: #fafafa;
+    }
+    .header-logo-link {
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: 500;
+      color: #212121;
+    }
+    .header-logo-span {
+      color: #2196f3;
+      font-style: italic;
+    }
+    .icon-basket {
+      width: 30px;
+      height: 30px;
+      fill: #808080;
+    }
+    .header-basket-link {
+      padding: 10px;
+      text-decoration: none;
+    }
+    .header-basket-span {
+      font-size: 13px;
+      color: #fafafa;
+      background-color: #212121;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  
+  @media screen and (min-width:760px){
+    .header-container {
+      display: none;
+    }
+  }
+ .desktop-header-category-container {
+   display: none;
+ }
+  .desktop-header-container {
+    display: none;
+  }
+  @media screen and (min-width:760px){
+    .desktop-header-container {
+      display: block;
+    }
+    .desktop-header-category-container {
+      display: block;
+    }
+  }
+  .desktop-icon-dots {
+    width: 50px;
+    height: 25px;
+    padding-top: 5px;
+  }
+  .desktop-search-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .desktop-icon-basket {
+    width: 28px;
+    height: 28px;
+  }
+  .desktop-header-list {
+    display: flex;
+    .link {
+      text-decoration: none;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+      color: var(--primary-color);
+    }
+    .item {
+      margin-right: 20px;
+    }
+    .item:last-child {
+      margin: 0;
+    }
+  }
+  .desktop-nav-dropdown-list {
+    display: none;
+  }
+  .desktop-header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .desktop-nav-contacts-container {
+    display: flex;
+    align-items: center;
+  }
+  .desktop-contacts-list {
+    display: flex;
+    align-items: center;
+    .text {
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      color: var(--no-primary-color);
+      margin-right: 20px;
+    }
+    .tel {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+    }
+  }
+  .desktop-contacts-container {
+    margin-left: auto;
+  }
+  .desktop-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+  .desktop-search-form {
+    position: relative;
+    width: 65%;
+  }
+  
+  .desktop-search-input {
+    height: 40px;
+    width: 100%;
+    padding: 5px 10px 5px 20px;
+    outline: none;
+    border: none;
+    background-color: var(--border-color);
+    border-radius: 20px;
+  }
+  .desktop-search-form-button {
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  .desktop-search-icon {
+    fill: var(--icon-fill);
+  }
+   .desktop-header-basket-container {
+     position: relative;
+   }
+  .desktop-icon-basket {
+    width: 40px;
+    height: 40px;
+    fill: #808080;
+  }
+  .desktop-header-basket-link {
+    padding: 10px;
+    text-decoration: none;
+  }
+  .desktop-header-basket-span {
+    font-size: 14px;
+    color: #fafafa;
+    background-color: #212121;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -28%;
+  }
+  .desktop-header-category-list {
+    display: flex;
+    align-items: center;
+    .link {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--background);
+    }
+    .item {
+        margin-right: 30px;
+    }
+    .item:last-child {
+        margin-right: 0;
+    }
+}

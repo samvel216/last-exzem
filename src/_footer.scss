@@ -1,0 +1,21 @@
+.footer-list {
+    margin-top: 15px;
+    .link {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .item {
+        margin-bottom: 30px;
+    }
+    .item:last-child {
+        margin: 0;
+    }
+    .text {
+        font-size: 13px;
+    }
+}
+.footer {
+    padding-bottom: 30px;
+}

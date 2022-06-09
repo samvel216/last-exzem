@@ -1,0 +1,131 @@
+.popular-section {
+    padding: 25px 0;
+}
+.popular-main-title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 10px;
+}
+.card-container {
+    margin-bottom: 20px;
+}
+.popular-list {
+    list-style: none;
+    & .text {
+        font-size: 20px;
+        font-weight: 400px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .price {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .button {
+        margin-top: 10px;
+        display: block;
+        width: 100%;
+        background-color: #1b2738;
+        color: aliceblue;
+        padding: 12px 0;
+        border: none;
+        border-radius: 4px;
+    }
+}
+.scroll-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    .item {
+        padding: 5px;
+    }
+}
+.scroll-btn {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    background-color: #999999;
+}
+@media screen and (min-width: 760px) {
+    .popular-title-button-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .popular-main-title {
+        font-size: 32px;
+    }
+  .scroll-list {
+      display: none;
+  }
+    .popular-list {
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+            width: 32%;
+        }
+        .item:nth-child(2) {
+            margin: 0 2%;
+        }
+    }
+    .popular-img-container {
+        border: 3px solid green;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+.arrow-6 {
+    margin-left: auto;
+}
+.arrow-6 svg {
+    width: 70px;
+    height: auto;
+    margin: 0 0 0 30px;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.arrow-6 svg polygon, 
+.arrow-6 svg path {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #337AB7;
+}
+.arrow-6 svg:hover polygon, 
+.arrow-6 svg:hover path {
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #000;
+}
+.arrow-6 svg:hover .arrow-6-pl {
+    animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6 svg:hover .arrow-6-pl-fixed {
+    animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+ 
+@keyframes arrow-6-anim {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(-0.1rem);
+    }
+    100% {
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+}
+@keyframes arrow-6-fixed-anim {
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+}
